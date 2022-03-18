@@ -14,14 +14,14 @@
   
   body {
     background-color: var(--quaternary-color);
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   
   
   /* HEADER / NAV BAR STYLES START */
   
   header {
-    padding: 20px 35px;
+    padding: 20px 0;
     background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
@@ -36,9 +36,9 @@
     background-color: var(--secondary-color);
     font-weight: bold;
     margin: 0;
-    font-size: 36px;
+    font-size: 48px;
     color: var( --primary-color);
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 500px;
   }
 
   header a {
@@ -117,12 +117,17 @@ footer {
     color: var(--primary-color);
     width: 40%;
     margin: 3.5%;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     text-align: center;
   }
 
   .hero-form h2 {
     font-size: 24px;
     margin: 0;
+  }
+
+  section h2 {
+      color: var(--tertiary-color);
+  }
+  section p {
+      color: var(--primary-color)
   }
