@@ -3,7 +3,7 @@
     --secondary-color: #92cccd;
     --tertiary-color: #445876;
     --quaternary-color: #ededf6;
-    --quinary-color: #31343e;
+    /* --quinary-color: #31343e; */
   }
   
   * {
@@ -17,8 +17,22 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   
-  
-  /* HEADER / NAV BAR STYLES START */
+  .side {
+    color: var(--tertiary-color);
+    font-size: 30px;
+    margin: 0 0px 0 0;
+    /* border-right: 3px solid; */
+    padding: 0 15px 0 0;
+    width: 200px;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-end;
+  }
+  .side-line {
+    border-left: 3px solid var(--tertiary-color);
+  }
   
   header {
     padding: 20px 0;
@@ -26,10 +40,57 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: sticky;
-    position: -webkit-sticky;
+    /* position: sticky;
+    position: -webkit-sticky; */
     top: 0;
     z-index: 9999;
+  }
+
+  /* styling of a in h1 in header -> Stepan Matysik */
+  header h1 a{ 
+    text-decoration: none;
+    padding-right: 10px;
+    justify-content: flex-end;
+    display: flex;
+    color:#31343d
+  }
+
+   #about-me, #work, #contact-me {
+     display: flex;
+     margin: 30px 0;
+     justify-content: flex-start
+   }
+
+   #about-me p, #work article, #contact a {
+     padding: 0 20px;
+   }
+
+#work article {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+   #work article div {
+     /* display: flex; */
+     border: 3px solid var(--secondary-color);
+   }
+
+  
+  #box1 {
+    margin: 10px 0 ;
+    width: 100%;
+  }
+
+  #box2 {
+    margin: 10px auto;
+    width: 43%;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    border-bottom: 3px solid;
+    margin: 10px;
   }
 
   header h1 {
@@ -39,23 +100,25 @@
     font-size: 48px;
     color: var( --primary-color);
     width: 500px;
-  }
 
-  header a {
-    text-decoration: none;
-    color: var(--primary-color);
-  }
-
-  header nav {
-    margin: 7px 0;
   }
   
-  header nav ul {
+  
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navigation ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     list-style: none;
+  }
+
+  .navigation #info {
+    padding-left: 50px;
   }
   
   header nav ul li a {
@@ -65,51 +128,20 @@
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
-  
-  /* HEADER / NAVBAR STYLES END */
 
-  /* FOOTER STYLES START */
-
-footer {
-    padding: 40px 35px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-  
-  footer h2 {
-    color: var(--tertiary-color);
-    font-size: 30px;
-    margin: 0;
-  }
-  
-  footer div {
-      line-height: 1.5;
-      text-align: right;
-    }
-    
-    footer a {
-    color: var(--quinary-color);
-  }
-
-  footer ul {
-      list-style: none;
-  }
-
-  /* END FOOTER STYLES */
 
   .hero {
     background-image: url('../images/hero-bg.jpg');
+    height: 400px;
     background-size: cover;
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
-    align-items: flex-start;
-    background-attachment: fixed;
+    align-items: flex-end;
+    /* background-attachment: fixed; */
     /* background-position: 80%; */
   }
-
+  
   .hero-form {
     border: 3px solid var(--secondary-color);
     background-color: var(--secondary-color);
@@ -119,15 +151,56 @@ footer {
     margin: 3.5%;
     text-align: center;
   }
+  
+  
+  /*
+  /* HEADER / NAVBAR STYLES END */
 
+  /* FOOTER STYLES START */
+
+/* footer {
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  /* .side {
+    color: var(--tertiary-color);
+    font-size: 30px;
+    margin: 0;
+    border-right: 3px solid;
+    padding: 0 32px 0 0;
+  } */
+  
+  /* footer div {
+      line-height: 1.5;
+      text-align: right;
+    }
+    
+    footer a {
+    color: var(--quinary-color);
+    padding: 0 15px;
+  }
+
+  footer ul {
+      list-style: none;
+      font-size: 25px;
+  }
+
+  /* END FOOTER STYLES */
+
+  
+  /*
   .hero-form h2 {
     font-size: 24px;
     margin: 0;
   }
-
-  section h2 {
-      color: var(--tertiary-color);
-  }
+  
+  /*
+  
   section p {
-      color: var(--primary-color)
-  }
+    color: var(--primary-color)
+  } 
+  */ */ */ */ */
