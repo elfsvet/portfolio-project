@@ -38,7 +38,7 @@ body {
   flex-direction: column; */
   /* flex-wrap     : wrap; */
   /* align-content : flex-end; */
-  font-size     : 2.5em;
+  font-size     : 1.5em;
 
 }
 
@@ -99,14 +99,15 @@ nav a {
 
 .navigation {
   display    : flex;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .navigation ul {
   display        : flex;
   flex-wrap      : wrap;
-  justify-content: space-between;
-  align-items    : center;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
   list-style     : none;
 }
 
@@ -288,14 +289,13 @@ header h1 a {
   justify-content: center;
 }
 
-.left-side {
-  font-size: 1.5em;
-}
-
 .hero {
   height: 367px;
 }
 
+.text-info {
+  font-size: small;
+}
 
 
 
