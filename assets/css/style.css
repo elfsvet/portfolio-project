@@ -3,7 +3,6 @@
   --secondary-color : #92cccd;
   --tertiary-color  : #445876;
   --quaternary-color: #ededf6;
-  /* --quinary-color: #31343e; */
 }
 
 * {
@@ -32,6 +31,8 @@ body {
 
 .side-line {
   border-left: 3px solid var(--tertiary-color);
+  padding    : 20px;
+  width: 100%;
 }
 
 header {
@@ -96,20 +97,22 @@ nav a {
   list-style     : none;
 }
 
-.navigation #info {
+/* .navigation #info {
   padding-left: 50px;
-}
+} */
 
 /* hero styles */
 
 .hero {
-  background-image        : url('../images/hero-bg.jpg');
-  height                  : 400px;
+  background-image        : url('../images/stepan_photo.jpg');
+  height                  : 600px;
   background-size         : cover;
   display                 : flex;
   justify-content         : flex-end;
-  flex-wrap               : wrap;
+
+  /* flex-wrap               : wrap; */
   align-items             : flex-end;
+  object-fit: contain;
   /* background-attachment: fixed; */
   /* background-position  : 80%; */
 }
@@ -121,6 +124,7 @@ nav a {
   width           : fit-content;
   margin          : 0 55px 20px 0;
   text-align      : center;
+  border-radius: 15px;
 }
 
 /* about me work and contact section */
@@ -130,19 +134,13 @@ nav a {
 #contact-me {
   display        : flex;
   margin         : 30px 0;
-  justify-content: flex-start
+  justify-content: space-between;
 }
 
-#about-me p,
-#work article,
-#contact a {
-  padding: 15px;
-}
-
-.side-line {
+/* .side-line {
   border-left: 3px solid #445876;
   padding    : 20px;
-}
+} */
 
 .first-line,
 .second-line,
@@ -169,17 +167,22 @@ nav a {
 work .side-line div i want to remove */
 
 
-#box1,
+.box1,
 .box5,
 .box4,
 .box3,
 .box2 {
   border     : 4px solid var(--secondary-color);
   margin     : 10px 0;
-  width      : 900px;
+  width      : 100%;
   height     : 400px;
   display    : flex;
   align-items: flex-end;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  object-fit: contain;
 }
 
 .box5,
@@ -189,22 +192,45 @@ work .side-line div i want to remove */
   /* border: 3px solid var(--secondary-color);
   margin: 10px auto; */
   width : 49%;
-  height: auto;
+  height: 30vh;
+
 }
 
 
-#box1:hover,
+
+.box1:hover,
 .box2:hover,
 .box3:hover,
 .box4:hover,
 .box5:hover {
   box-shadow: inset 0 0 0 1000px rgba(226, 197, 111, 0.5);
 }
+/* Surf Report */
+.box1 {
+  margin-top: 0;
+  /* height: 400px; */
+  background-image: url("../images/surf-report.jpeg");
+}
 
+/* Led Wall */
+.box2 {
+  background-image: url("../images/led-wall.jpeg");
+}
+/* Calculator */
+.box3 {
+  background-image: url("../images/calculator.jpeg");
+  
+}
+/* Pastel Puzzles */
+.box4 {
+  background-image: url("../images/pastel-puzzles.webp");
+
+}
+/* run-buddy project */
 .box5 {
   background-image: url("../images/run-buddy.png");
-  background-size : 130%;
-
+  background-position: initial;
+  
 }
 
 .box-name {
@@ -215,3 +241,4 @@ work .side-line div i want to remove */
   font-size       : 1em;
 
 }
+
