@@ -1,223 +1,194 @@
 :root {
-    --primary-color: #31343d;
-    --secondary-color: #92cccd;
-    --tertiary-color: #445876;
-    --quaternary-color: #ededf6;
-    /* --quinary-color: #31343e; */
-  }
-  
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    background-color: var(--quaternary-color);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-  
-  .side {
-    color: var(--tertiary-color);
-    font-size: 30px;
-    margin: 0 0px 0 0;
-    /* border-right: 3px solid; */
-    padding: 0 15px 0 0;
-    width: 200px;
-    text-align: end;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: flex-end;
-  }
-  .side-line {
-    border-left: 3px solid var(--tertiary-color);
-  }
-  
-  header {
-    padding: 20px 0;
-    background-color: var(--primary-color);
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    /* position: sticky;
-    position: -webkit-sticky; */
-    top: 0;
-    z-index: 9999;
-  }
+  --primary-color   : #31343d;
+  --secondary-color : #92cccd;
+  --tertiary-color  : #445876;
+  --quaternary-color: #ededf6;
+  /* --quinary-color: #31343e; */
+}
 
-  /* styling of a in h1 in header -> Stepan Matysik */
-  header h1 a{ 
-    text-decoration: none;
-    padding-right: 10px;
-    justify-content: flex-end;
-    display: flex;
-    color:#31343d
-  }
+* {
+  box-sizing: border-box;
+  margin    : 0;
+  padding   : 0;
+}
 
-   #about-me, #work, #contact-me {
-     display: flex;
-     margin: 30px 0;
-     justify-content: flex-start
-   }
+body {
+  background-color: var(--quaternary-color);
+  font-family     : Verdana, Geneva, Tahoma, sans-serif;
+}
 
-   #about-me p, #work article, #contact a {
-     padding: 15px;
-   }
+.side {
+  color         : var(--tertiary-color);
+  margin        : 0 0px 0 0;
+  padding       : 0 15px 0 0;
+  width         : 250px;
+  text-align    : end;
+  display       : flex;
+  flex-direction: column;
+  flex-wrap     : wrap;
+  align-content : flex-end;
+  font-size     : 2.5em;
+}
+
+.side-line {
+  border-left: 3px solid var(--tertiary-color);
+}
+
+header {
+  padding         : 20px 0;
+  background-color: var(--primary-color);
+  display         : flex;
+  justify-content : space-between;
+  flex-wrap       : wrap;
+  /* position     : sticky;
+    position      : -webkit-sticky; */
+  top             : 0;
+  z-index         : 9999;
+}
+
+header h1 {
+  background-color: var(--secondary-color);
+  font-weight     : bold;
+  margin          : 0;
+  font-size       : 48px;
+  color           : var(--primary-color);
+  width           : 500px;
+
+}
+
+/* styling of a in h1 in header -> Stepan Matysik */
+header h1 a {
+  text-decoration: none;
+  padding-right  : 10px;
+  justify-content: flex-end;
+  display        : flex;
+  color          : #31343d
+}
+
+header nav ul li a {
+  color      : var(--secondary-color);
+  padding    : 10px 15px;
+  font-weight: lighter;
+  font-size  : 1.55vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* footer and header nav styles */
+
+nav a {
+  text-decoration: none;
+  color          : var(--primary-color);
+  border-bottom  : 3px solid;
+  margin         : 10px;
+}
+
+
+.navigation {
+  display    : flex;
+  align-items: center;
+}
+
+.navigation ul {
+  display        : flex;
+  flex-wrap      : wrap;
+  justify-content: space-between;
+  align-items    : center;
+  list-style     : none;
+}
+
+.navigation #info {
+  padding-left: 50px;
+}
+
+/* hero styles */
+
+.hero {
+  background-image        : url('../images/hero-bg.jpg');
+  height                  : 400px;
+  background-size         : cover;
+  display                 : flex;
+  justify-content         : flex-end;
+  flex-wrap               : wrap;
+  align-items             : flex-end;
+  /* background-attachment: fixed; */
+  /* background-position  : 80%; */
+}
+
+.hero-form {
+  background-color: var(--secondary-color);
+  padding         : 12px;
+  color           : var(--primary-color);
+  width           : fit-content;
+  margin          : 0 55px 20px 0;
+  text-align      : center;
+}
+
+/* about me work and contact section */
+
+#about-me,
+#work,
+#contact-me {
+  display        : flex;
+  margin         : 30px 0;
+  justify-content: flex-start
+}
+
+#about-me p,
+#work article,
+#contact a {
+  padding: 15px;
+}
 
 #work .side-line {
-  display: flex;
+  display  : flex;
   flex-flow: row wrap;
 }
 
-   #work .side-line div {
-     border: 3px solid var(--secondary-color);
-   }
 
-  
-  #box1 {
-    margin: 10px 0 ;
-    width: 100%;
-  }
+#work .side-line div {
+  /* border: 3px solid var(--secondary-color); */
+}
 
-  #box1:hover, #box2:hover {
-    background-color: rgba(226, 197, 111, 0.5);
-    ;
-  }
+/* i'm trying to add DRY to box 1 and box 2 to keep same styling together
+work .side-line div i want to remove */
 
 
-  .button-name {  
-    box-sizing: content-box;
-    width:fit-content;
-    background-color: var(--secondary-color);
-    margin: 20px 20px 20px 0;
-  }
-  
+#box1 {
+  border: 3px solid var(--secondary-color);
+  margin: 10px 0;
+  width : 100%;
+  height: 400px;
+}
 
-  #box2 {
-    margin: 10px auto;
-    width: 43%;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: var(--primary-color);
-    border-bottom: 3px solid;
-    margin: 10px;
-  }
+.box2 {
+  border: 3px solid var(--secondary-color);
+  margin: 10px auto;
+  width : 43%;
+}
 
-  header h1 {
-    background-color: var(--secondary-color);
-    font-weight: bold;
-    margin: 0;
-    font-size: 48px;
-    color: var( --primary-color);
-    width: 500px;
+#box1:hover,
+.box2:hover {
+  box-shadow: inset 0 0 0 1000px rgba(226, 197, 111, 0.5);
+}
 
-  }
-  
-  
-  .navigation {
-    display: flex;
-    align-items: center;
-  }
-  
-  .navigation ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-  }
+.run-buddy {
+  background-image: url("../images/run-buddy.png");
+  background-size : 130%;
 
-  .navigation #info {
-    padding-left: 50px;
-  }
-  
-  header nav ul li a {
-    color: var(--secondary-color);
-    padding: 10px 15px;
-    font-weight: lighter;
-    font-size: 1.55vw;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  }
+}
 
 
-  .hero {
-    background-image: url('../images/hero-bg.jpg');
-    height: 400px;
-    background-size: cover;
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    /* background-attachment: fixed; */
-    /* background-position: 80%; */
-  }
-  
-  .hero-form {
-    border: 3px solid var(--secondary-color);
-    background-color: var(--secondary-color);
-    padding: 20px;
-    color: var(--primary-color);
-    width: 40%;
-    margin: 3.5%;
-    text-align: center;
-  }
-  
-  
-  /*
-  /* HEADER / NAVBAR STYLES END */
 
-  /* FOOTER STYLES START */
+.box-name {
+  box-sizing      : content-box;
+  width           : fit-content;
+  background-color: var(--secondary-color);
+  margin          : 20px 20px 20px 0;
+  font-family     : Trebuchet MS, sans-serif;
+  font-size       : 1em;
 
-/* footer {
-    padding: 40px 35px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-  
-  /* .side {
-    color: var(--tertiary-color);
-    font-size: 30px;
-    margin: 0;
-    border-right: 3px solid;
-    padding: 0 32px 0 0;
-  } */
-  
-  /* footer div {
-      line-height: 1.5;
-      text-align: right;
-    }
-    
-    footer a {
-    color: var(--quinary-color);
-    padding: 0 15px;
-  }
+}
 
-  footer ul {
-      list-style: none;
-      font-size: 25px;
-  }
-
-  /* END FOOTER STYLES */
-
-  
-  /*
-  .hero-form h2 {
-    font-size: 24px;
-    margin: 0;
-  }
-  
-  /*
-  
-  section p {
-    color: var(--primary-color)
-  } 
-<<<<<<< HEAD
-  */ */ */ */ */
-=======
-  */ */ */ */ */
->>>>>>> b98cfa043b3352c351e5c74055cb740fa15f8968
+#work .box2_1 {
+  width: 100%;
+}
