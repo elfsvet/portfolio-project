@@ -17,35 +17,35 @@ body {
 }
 
 /* .side { */
-  /* color         : var(--tertiary-color);
+/* color         : var(--tertiary-color);
   padding-right: 15px;
   width         : 250px;
   text-align    : end;
   /* display       : flex;
   flex-direction: column; */
-  /* flex-wrap     : wrap; */
-  /* align-content : flex-end; */
-  /* font-size     : 2.5em; */
+/* flex-wrap     : wrap; */
+/* align-content : flex-end; */
+/* font-size     : 2.5em; */
 /* } */
 .left-side {
-  border-right: 3px solid var(--tertiary-color);
-  position: relative;
-  color         : var(--tertiary-color);
-  padding-right: 15px;
-  width         : 250px;
-  text-align    : end;
+  border-right     : 3px solid var(--tertiary-color);
+  position         : relative;
+  color            : var(--tertiary-color);
+  padding-right    : 15px;
+  width            : 250px;
+  text-align       : end;
   /* display       : flex;
-  flex-direction: column; */
+  flex-direction   : column; */
   /* flex-wrap     : wrap; */
   /* align-content : flex-end; */
-  font-size     : 1.5em;
+  font-size        : 1.5em;
 
 }
 
 
 .right-side {
-  padding    : 20px;
-  width      : 100%;
+  padding: 20px;
+  width  : 100%;
 }
 
 header {
@@ -61,12 +61,12 @@ header {
 }
 
 header h1 {
-  background-color: var(--secondary-color);
-  font-weight     : bold;
-  margin          : 0;
-  font-size       : 48px;
+  background-color   : var(--secondary-color);
+  font-weight        : bold;
+  margin             : 0;
+  font-size          : 48px;
   /* color           : var(--primary-color); */
-  width           : 500px;
+  width              : 500px;
 
 }
 
@@ -98,7 +98,7 @@ nav a {
 
 
 .navigation {
-  display    : flex;
+  display       : flex;
   /* align-items: center; */
 }
 
@@ -106,8 +106,8 @@ nav a {
   display        : flex;
   flex-wrap      : wrap;
   justify-content: center;
-  align-items: center;
-  align-content: space-between;
+  align-items    : center;
+  align-content  : space-between;
   list-style     : none;
 }
 
@@ -125,10 +125,10 @@ nav a {
   justify-content : flex-end;
 
   /* flex-wrap               : wrap; */
-  align-items             : flex-end;
+  align-items                : flex-end;
   /* object-fit              : contain; */
-  /* background-attachment: fixed; */
-  /* background-position  : 80%; */
+  /* background-attachment   : fixed; */
+  /* background-position     : 80%; */
 }
 
 .hero-box {
@@ -146,8 +146,8 @@ nav a {
 #about-me,
 #work,
 #contact-me {
-  display        : flex;
-  margin         : 30px 0;
+  display           : flex;
+  margin            : 30px 0;
   /* justify-content: space-between; */
 }
 
@@ -261,13 +261,16 @@ work .right-side div i want to remove */
 }
 
 footer {
-  background: var(--primary-color);
-  color: var(--secondary-color);
-  width: 100%;
-  padding: 40px 35px;
-  display: flex; /* lets display boxes with moving them around while resizing the window */
-  justify-content: center; /* will position two boxes with equal empty space in between them */
-  flex-wrap: wrap; /* will wrap boxes one under another */
+  background     : var(--primary-color);
+  color          : var(--secondary-color);
+  width          : 100%;
+  padding        : 40px 35px;
+  display        : flex;
+  /* lets display boxes with moving them around while resizing the window */
+  justify-content: center;
+  /* will position two boxes with equal empty space in between them */
+  flex-wrap      : wrap;
+  /* will wrap boxes one under another */
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
@@ -275,33 +278,33 @@ footer {
 
 
   header {
-    padding:3px 0;
-    padding-bottom: 19px;
+    padding        : 3px 0;
+    padding-bottom : 19px;
     justify-content: center;
-    position: relative;
-}
+    position       : relative;
+  }
 
-header h1 {
-  font-size: 30px;
-  width: 300px;
-}
+  header h1 {
+    font-size: 30px;
+    width    : 300px;
+  }
 
-header h1 a {
-  justify-content: center;
-  padding: 0;
-}
+  header h1 a {
+    justify-content: center;
+    padding        : 0;
+  }
 
-.hero {
-  height: 367px;
-}
+  .hero {
+    height: 367px;
+  }
 
-.text-info {
-  font-size: small;
-}
+  .text-info {
+    font-size: small;
+  }
 
-.box1 {
-  height: 290px;
-}
+  .box1 {
+    height: 290px;
+  }
 
 
 }
@@ -311,21 +314,27 @@ header h1 a {
   nav a {
     font-size: 2vw;
   }
-  
-  .hero-box{
+
+  .hero-box {
     font-size: 10px;
   }
-.left-side {
-  font-size: 1em;
-  width: 165px;
-}
+
+  .left-side {
+    font-size: 1em;
+    width    : 165px;
+  }
 
   .box1 {
     height: 200px;
   }
-  .box2, .box3, .box4, .box5 {
+
+  .box2,
+  .box3,
+  .box4,
+  .box5 {
     height: 100px;
   }
+
   .box-name {
     font-size: 10px;
   }
@@ -333,5 +342,8 @@ header h1 a {
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
- 
+  .left-side {
+    font-size: 10px;
+    width    : 117px;
+  }
 }
