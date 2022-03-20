@@ -169,7 +169,8 @@ work .right-side div i want to remove */
 }
 
 /* highlight links and projects then hovering with a cursor */
-a:hover,
+#top-nav a:hover,
+#info a:hover,
 #box1:hover,
 #box2:hover,
 #box3:hover,
