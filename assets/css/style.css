@@ -16,37 +16,6 @@ body {
   font-family     : Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* .side { */
-/* color         : var(--tertiary-color);
-  padding-right: 15px;
-  width         : 250px;
-  text-align    : end;
-  /* display       : flex;
-  flex-direction: column; */
-/* flex-wrap     : wrap; */
-/* align-content : flex-end; */
-/* font-size     : 2.5em; */
-/* } */
-.left-side {
-  border-right     : 3px solid var(--tertiary-color);
-  position         : relative;
-  color            : var(--tertiary-color);
-  padding-right    : 15px;
-  width            : 250px;
-  text-align       : end;
-  /* display       : flex;
-  flex-direction   : column; */
-  /* flex-wrap     : wrap; */
-  /* align-content : flex-end; */
-  font-size        : 1.5em;
-
-}
-
-
-.right-side {
-  padding: 20px;
-  width  : 100%;
-}
 
 header {
   padding         : 20px 0;
@@ -54,20 +23,15 @@ header {
   display         : flex;
   justify-content : space-between;
   flex-wrap       : wrap;
-  /* position     : sticky;
-    position      : -webkit-sticky; */
-  top             : 0;
-  z-index         : 9999;
+  align-items: center;
 }
 
 header h1 {
   background-color   : var(--secondary-color);
-  font-weight        : bold;
-  margin             : 0;
   font-size          : 48px;
-  /* color           : var(--primary-color); */
   width              : 500px;
-
+  margin-bottom: 10px;
+  border-radius: 0 17px 17px 0;
 }
 
 /* styling of a in h1 in header -> Stepan Matysik */
@@ -79,27 +43,21 @@ header h1 a {
   color          : var(--primary-color)
 }
 
-header nav ul li a {
-  color      : var(--secondary-color);
-  padding    : 10px 15px;
-  font-weight: lighter;
-  font-size  : 1.55vw;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+#top-nav a {
+  text-decoration: none;
+  color    : var(--secondary-color);
+  padding  : 10px;
+  font-size: 24px;
 }
 
 /* contact me and header nav styles */
 
-nav a {
+#info a {
   text-decoration: none;
   color          : var(--primary-color);
-  border-bottom  : 3px solid;
+  border-bottom  : 1px solid;
   margin         : 10px;
-}
-
-
-.navigation {
-  display       : flex;
-  /* align-items: center; */
+  line-height: 25px;
 }
 
 .navigation ul {
@@ -111,28 +69,18 @@ nav a {
   list-style     : none;
 }
 
-/* .navigation #info {
-  padding-left: 50px;
-} */
-
-/* hero styles */
-
 .hero {
   background-image: url('../images/stepan_photo.jpg');
   height          : 600px;
   background-size : cover;
   display         : flex;
   justify-content : flex-end;
+  align-items     : flex-end;
 
-  /* flex-wrap               : wrap; */
-  align-items                : flex-end;
-  /* object-fit              : contain; */
-  /* background-attachment   : fixed; */
-  /* background-position     : 80%; */
 }
 
 .hero-box {
-  background-color: var(--quaternary-color);
+  background-color: var(--secondary-color);
   padding         : 12px;
   color           : var(--primary-color);
   width           : fit-content;
@@ -141,20 +89,39 @@ nav a {
   border-radius   : 15px;
 }
 
-/* about me work and contact section */
+/* about me work and contact section 
+separeted on two sides */
+
+.left-side {
+  border-right : 3px solid var(--tertiary-color);
+  position     : relative;
+  color        : var(--tertiary-color);
+  padding-right: 15px;
+  width        : 250px;
+  text-align   : end;
+  font-size    : 1.5em;
+
+}
 
 #about-me,
 #work,
 #contact-me {
-  display           : flex;
-  margin            : 30px 0;
-  /* justify-content: space-between; */
+  display: flex;
+  margin : 30px 0;
 }
 
-/* .right-side {
-  border-left: 3px solid #445876;
-  padding    : 20px;
-} */
+.right-side {
+  padding: 20px;
+  width  : 100%;
+}
+
+
+#about-me p,
+.box-name,
+#info a {
+  font-size: 2vw;
+}
+
 
 .first-line,
 .second-line,
@@ -176,10 +143,11 @@ nav a {
 
 
 
-
+/* DONE it */
 /* i'm trying to add DRY to box 1 and box 2 to keep same styling together
 work .right-side div i want to remove */
 
+/* Work projects styles */
 
 .box1,
 .box5,
@@ -203,11 +171,8 @@ work .right-side div i want to remove */
 .box4,
 .box3,
 .box2 {
-  /* border: 3px solid var(--secondary-color);
-  margin: 10px auto; */
   width : 49%;
   height: 30vh;
-
 }
 
 
@@ -220,7 +185,8 @@ work .right-side div i want to remove */
   box-shadow: inset 0 0 0 1000px rgba(226, 197, 111, 0.5);
 }
 
-/* Surf Report */
+/* HORISEON  */
+
 .box1 {
   margin-top      : 0;
   /* height       : 400px; */
@@ -256,7 +222,6 @@ work .right-side div i want to remove */
   background-color: var(--secondary-color);
   margin          : 20px 20px 20px 0;
   font-family     : Trebuchet MS, sans-serif;
-  font-size       : 1em;
 
 }
 
@@ -268,30 +233,28 @@ footer {
   display        : flex;
   /* lets display boxes with moving them around while resizing the window */
   justify-content: center;
-  /* will position two boxes with equal empty space in between them */
   flex-wrap      : wrap;
   /* will wrap boxes one under another */
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 986px) {
 
 
   header {
-    padding        : 3px 0;
-    padding-bottom : 19px;
-    justify-content: center;
-    position       : relative;
+    padding       : 3px 0;
+    padding-bottom: 19px;
   }
 
   header h1 {
     font-size: 30px;
     width    : 300px;
+    border-radius: 0 5px 5px 0;
   }
 
   header h1 a {
-    justify-content: center;
-    padding        : 0;
+    justify-content: end;
+    padding-right        : 5px;
   }
 
   .hero {
@@ -310,12 +273,22 @@ footer {
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
-@media screen and (max-width: 768px) {
-  nav a {
-    font-size: 2vw;
+@media screen and (max-width: 786px) {
+
+  header {
+    justify-content: center;
   }
 
-  .hero-box {
+  header h1 {
+    border-radius: 17px;
+  }
+
+  header h1 a {
+    justify-content: center;
+    padding: 0;
+  }
+
+  .hero-box, .box-name {
     font-size: 10px;
   }
 
@@ -335,9 +308,6 @@ footer {
     height: 100px;
   }
 
-  .box-name {
-    font-size: 10px;
-  }
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
@@ -352,7 +322,8 @@ footer {
   }
 
   footer {
-    font-size: 3vw;
+    font-size      : 3vw;
+    justify-content: center;
   }
-  
+
 }
