@@ -224,7 +224,7 @@ work .right-side div i want to remove */
 .box1 {
   margin-top      : 0;
   /* height       : 400px; */
-  background-image: url("../images/surf-report.jpeg");
+  background-image: url("../images/horiseon.jpg");
 }
 
 /* Led Wall */
@@ -346,4 +346,13 @@ footer {
     font-size: 10px;
     width    : 117px;
   }
+
+  .navigation ul li a {
+    font-size: 2.5vw;
+  }
+
+  footer {
+    font-size: 3vw;
+  }
+  
 }
