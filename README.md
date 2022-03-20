@@ -1,6 +1,6 @@
 # Portfolio project
 > Portfolio project. A website with information about my projects.
-> Live demo [_here_](https://elfsvet.github.io/week02-challange02/#contact-me). 
+> Live demo [_here_](https://elfsvet.github.io/portfolio-project). 
 
 ## Table of contents
 * [General info](#general-info)
@@ -32,7 +32,7 @@ To open this project in vscode using git in Terminal/Git Bash:
 ```
 $ mkdir portfolio_project
 $ cd portfolio_project
-$ git clone https://github.com/elfsvet/week02-challange02.git
+$ git clone https://github.com/elfsvet/portfolio-project.git
 $ code .
 ```
 
