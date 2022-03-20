@@ -23,19 +23,19 @@ header {
   display         : flex;
   justify-content : space-between;
   flex-wrap       : wrap;
-  align-items: center;
+  align-items     : center;
 }
 
 header h1 {
-  background-color   : var(--secondary-color);
-  font-size          : 48px;
-  width              : 500px;
-  margin-bottom: 10px;
-  border-radius: 0 17px 17px 0;
+  background-color: var(--secondary-color);
+  font-size       : 48px;
+  width           : 500px;
+  margin-bottom   : 10px;
+  border-radius   : 0 17px 17px 0;
 }
 
 /* styling of a in h1 in header -> Stepan Matysik */
-header h1 a {
+header a {
   text-decoration: none;
   padding-right  : 10px;
   justify-content: flex-end;
@@ -45,9 +45,9 @@ header h1 a {
 
 #top-nav a {
   text-decoration: none;
-  color    : var(--secondary-color);
-  padding  : 10px;
-  font-size: 24px;
+  color          : var(--secondary-color);
+  padding        : 10px;
+  font-size      : 24px;
 }
 
 /* contact me and header nav styles */
@@ -57,10 +57,11 @@ header h1 a {
   color          : var(--primary-color);
   border-bottom  : 1px solid;
   margin         : 10px;
-  line-height: 25px;
+  line-height    : 25px;
 }
 
-.navigation ul {
+#top-nav,
+#info {
   display        : flex;
   flex-wrap      : wrap;
   justify-content: center;
@@ -117,17 +118,9 @@ separeted on two sides */
 
 
 #about-me p,
-.box-name,
+.name-of-boxes,
 #info a {
   font-size: 2vw;
-}
-
-
-.first-line,
-.second-line,
-.trird-line {
-  display  : flex;
-  flex-flow: row wrap;
 }
 
 .first-line {
@@ -149,11 +142,11 @@ work .right-side div i want to remove */
 
 /* Work projects styles */
 
-.box1,
-.box5,
-.box4,
-.box3,
-.box2 {
+#box1,
+#box5,
+#box4,
+#box3,
+#box2 {
   border             : 4px solid var(--secondary-color);
   margin             : 10px 0;
   width              : 100%;
@@ -167,63 +160,66 @@ work .right-side div i want to remove */
   object-fit         : contain;
 }
 
-.box5,
-.box4,
-.box3,
-.box2 {
+#box5,
+#box4,
+#box3,
+#box2 {
   width : 49%;
   height: 30vh;
 }
 
-
-
-.box1:hover,
-.box2:hover,
-.box3:hover,
-.box4:hover,
-.box5:hover {
+/* highlight links and projects then hovering with a cursor */
+a:hover,
+#box1:hover,
+#box2:hover,
+#box3:hover,
+#box4:hover,
+#box5:hover {
   box-shadow: inset 0 0 0 1000px rgba(226, 197, 111, 0.5);
 }
 
 /* HORISEON  */
 
-.box1 {
+#box1 {
   margin-top      : 0;
   /* height       : 400px; */
   background-image: url("../images/horiseon.jpg");
 }
 
 /* Led Wall */
-.box2 {
+#box2 {
   background-image: url("../images/led-wall.jpeg");
 }
 
 /* Calculator */
-.box3 {
+#box3 {
   background-image: url("../images/calculator.jpeg");
 
 }
 
 /* Pastel Puzzles */
-.box4 {
+#box4 {
   background-image: url("../images/pastel-puzzles.webp");
 
 }
 
 /* run-buddy project */
-.box5 {
+#box5 {
   background-image   : url("../images/run-buddy.png");
   background-position: initial;
 
 }
 
-.box-name {
+/* small box with name and technology used to create  */
+.name-of-boxes {
   width           : fit-content;
   background-color: var(--secondary-color);
   margin          : 20px 20px 20px 0;
   font-family     : Trebuchet MS, sans-serif;
 
 }
+
+/* bottom part of the page */
 
 footer {
   background     : var(--primary-color);
@@ -233,9 +229,9 @@ footer {
   display        : flex;
   /* lets display boxes with moving them around while resizing the window */
   justify-content: center;
-  flex-wrap      : wrap;
   /* will wrap boxes one under another */
 }
+
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 986px) {
@@ -247,14 +243,14 @@ footer {
   }
 
   header h1 {
-    font-size: 30px;
-    width    : 300px;
+    font-size    : 30px;
+    width        : 300px;
     border-radius: 0 5px 5px 0;
   }
 
-  header h1 a {
+  header a {
     justify-content: end;
-    padding-right        : 5px;
+    padding-right  : 5px;
   }
 
   .hero {
@@ -265,7 +261,7 @@ footer {
     font-size: small;
   }
 
-  .box1 {
+  #box1 {
     height: 290px;
   }
 
@@ -283,12 +279,12 @@ footer {
     border-radius: 17px;
   }
 
-  header h1 a {
+  header a {
     justify-content: center;
-    padding: 0;
+    padding        : 0;
   }
 
-  .hero-box, .box-name {
+  .hero-name-of-boxes {
     font-size: 10px;
   }
 
@@ -297,14 +293,14 @@ footer {
     width    : 165px;
   }
 
-  .box1 {
+  #box1 {
     height: 200px;
   }
 
-  .box2,
-  .box3,
-  .box4,
-  .box5 {
+  #box2,
+  #box3,
+  #box4,
+  #box5 {
     height: 100px;
   }
 
@@ -317,7 +313,8 @@ footer {
     width    : 117px;
   }
 
-  .navigation ul li a {
+  #top-nav a,
+  #info a {
     font-size: 2.5vw;
   }
 
