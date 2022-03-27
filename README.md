@@ -1,4 +1,4 @@
-# Portfolio project
+# Stepan Matysik's Portfolio project
 > Portfolio project. A website with information about my projects.
 > Live demo [_here_](https://elfsvet.github.io/portfolio-project). 
 
