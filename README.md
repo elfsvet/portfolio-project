@@ -32,7 +32,7 @@ To open this project in vscode using git in Terminal/Git Bash:
 ```
 $ mkdir portfolio_project
 $ cd portfolio_project
-$ git clone https://github.com/elfsvet/portfolio-project.git
+$ git clone https://github.com/elfsvet/stepan-matysik-portfolio-project.git
 $ code .
 ```
 
