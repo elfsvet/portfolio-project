@@ -1,5 +1,5 @@
 # Stepan Matysik's Portfolio project
-> Portfolio project. A website with information about my projects.
+> First Portfolio project. A website with information about my projects.
 > Live demo [_here_](https://elfsvet.github.io/stepan-matysik-portfolio-project/). 
 
 ## Table of contents
@@ -19,6 +19,7 @@
 ## General Info
 This project is simply a webpage about me.
 It demonstrates my skills, my project and contact information.
+I made it with HTML and Css only.
 
 ## Technologies
 Project is created with:
